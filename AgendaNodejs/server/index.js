@@ -1,8 +1,3 @@
-/********************************************************************************/
-/*****************************   Antes de iniciar   *****************************/
-/********** Leer el archivo index.html en la carpeta raiz del proyecto **********/
-/********************************************************************************/
-/********************************************************************************/
 
 const http = require('http'); //requerir el módulo http
       path = require('path'), //requiere el modulo path para trabajar con directorios

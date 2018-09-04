@@ -6,7 +6,7 @@ const Operaciones = require('./crud.js')
 Router.get('/demo', function(req, res) {
   Usuarios.find({user: req.query.user}).count({}, function(err, count) { //Verificar si exste el usuario DEMO
     if(count>0){ //Si el registro es mayor a 0
-        res.send("Utilice los siguientes datos: </br>usuario: demo | password:123456 </br>usuario: juan | password:123456") //Mostrra mensaje con los datos de los usuarios predeterminados
+        res.send("Utilice los siguientes datos: </br>usuario: maricela | password:123456") //Mostrra mensaje con los datos de los usuarios predeterminados
     }else{
       Eventos.find({}).count({}, function(err, count) { //Si no existen usuarios en la base de datos Verificar que no exista ningún evento creado en la base de datos
         if(count>0){ //Si existen eventos
@@ -14,7 +14,7 @@ Router.get('/demo', function(req, res) {
           if(err){
             console.log(err)
           }else{
-            console.log("Información de eventos reinicializada") //Mostrar mensaje en cónsola
+            console.log("Información de eventos reinicializada") 
           }
         })
       }
